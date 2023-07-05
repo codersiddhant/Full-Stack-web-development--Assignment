@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll bar when hover</title>
+
+    <style>
+        div{
+            display: block;
+            padding: 10px;
+        }
+        .contant{
+            display: none;
+            background-color: rgb(239, 239, 239);
+            max-height: 200px;
+            width: 150px;
+            overflow-y: scroll;
+            margin-top: 125px;
+            margin-left: 10px;
+            position: fixed;
+            text-align: center;
+        }
+
+        .contant>div:hover{
+
+            background-color: blanchedalmond;
+
+        }
+
+
+        span{
+
+            top: 60px;
+            position: absolute; 
+            background-color: tomato;
+            height: 40px;
+            padding: 20px; 
+            border-radius: 10px;
+        }
+
+        span:hover + .contant,
+        .contant:hover {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="main">
+        <span>Hover To View Options</span>
+        <div class="contant">
+            <div class="option">option 1</div>
+            <div class="option">option 2</div>
+            <div class="option">option 3</div>
+            <div class="option">option 4</div>
+            <div class="option">option 5</div>
+            <div class="option">option 6</div>
+            <div class="option">option 7</div>
+            <div class="option">option 8</div>
+            <div class="option">option 9</div>
+            <div class="option">option 10</div>
+        </div>
+    </div>
+    
+</body>
+</html>
