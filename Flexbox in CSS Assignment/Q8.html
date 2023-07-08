@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circular images</title>
+
+    <style>
+
+
+         body{
+
+            background-color: rgb(74, 74, 74);
+         }
+
+
+
+        
+        img{
+            width: 10%;
+            border-radius: 100%;
+            border: solid 5px rgb(218, 28, 28);
+            margin-right: -30px;
+
+        }
+
+        .container{
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100vh;
+          
+            
+            
+            
+        }
+
+        .one{
+            z-index: 4;
+        }
+        .two{
+            z-index: 3;
+        }
+        .three{
+            z-index: 2;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    
+
+
+        <section class="container">
+
+            <img src="img/html-logo.png" alt="" class="one">
+            <img src="img/css.png" alt="" class="two">
+            <img src="img/jslogo.png" alt="" class="three">
+            <img src="img/python.jpg" alt="" class="four">
+        </section>
+
+
+
+    
+</body>
+</html>

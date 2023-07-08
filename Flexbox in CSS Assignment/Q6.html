@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google homepage</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: #202124;
+
+        }
+
+
+
+        .container{
+            width: 100%;
+            /* background-color: aqua; */
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 25px;
+
+        }
+        .search-bar{
+            width: 80%;
+            border-radius: 50px;
+            height: 45px;
+            border: 1px solid #6e7277;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        input{
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .sub-image{
+            width: 50px;
+        }
+
+        .google-text {
+        width: 30%;
+        margin-bottom: 40px;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
+          alt="Google"
+          class="google-text"
+        />
+        <div class="search-bar">
+            <img
+            class="sub-image"
+            src="img/google-search-icon.png"
+            alt="MicroPhone"
+          />
+          <input type="text" />
+          <img
+            class="sub-image"
+            src="img/google-microphone.png"
+            alt="MicroPhone"
+          />
+          <img
+            class="sub-image"
+            src="img/google-lense.png"
+            alt="Lens"
+          />
+        </div>
+      </div>
+    </body>
+  </html>
+  
+</body>
+</html>

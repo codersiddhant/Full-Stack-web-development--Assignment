@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gmail homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans|Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+<style>
+ 
+ 
+
+
+
+
+    body{
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .header{
+        display: flex;
+        background-color: rgb(255,255,255);
+        height: 60px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);    
+        font-family: 'Roboto', sans-serif;
+
+
+        
+    }
+
+    .header>img{
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-left: 60px;
+        margin-top: 20px;
+    
+
+       
+        
+    }
+
+    .header>a{
+        margin-left: 10px;
+        text-decoration: none;
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 500px;
+        color: #5f6368;
+        
+    }
+
+    .buttons{
+        background-color: rgb(255, 255, 255);
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-right: 40px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .buttons>button{
+
+        padding: 10px 16px;
+        gap: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 100px;
+        height: 45px;
+        font-weight: 500px;
+        border-radius: 5px;
+        font-size: 16px;
+        border: none;
+        font-size: 17px;
+
+        
+
+    }
+
+   
+
+    .buttons .for-work{
+        color: #1a73e8;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+       
+
+        
+    }
+    .buttons .sign-in{
+        color: #1a73e8;
+        background-color: white;
+        border: 1px solid #dadce0;
+        font-family: 'Roboto', sans-serif;
+       
+
+
+
+        
+        
+    }
+
+    .buttons .get-gmail{
+        width: 180px;
+        color: white;
+        background-color: #1a73e8;
+        font-family: 'Roboto', sans-serif;
+            
+        
+    }
+
+
+    .buttons .for-work:hover{
+       
+        background-color: rgb(224, 224, 224);
+        
+        
+        
+    }
+
+    .buttons .sign-in:hover{
+
+        background-color: rgb(224, 224, 224);
+        border: 1px solid rgb(147, 147, 251);
+
+
+
+    }
+
+    .buttons .get-gmail:hover{
+
+        background-color: rgb(60, 60, 253);
+
+    }
+
+
+
+    /* contant */
+
+
+
+    .contant{
+        
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+
+    .data>h1{
+    
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30%;
+        padding: 25px;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0px;
+
+
+        
+    }
+
+    .data>p{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 25px;
+    color: rgb(139, 139, 136);
+    margin-bottom: 10px;
+    padding-top: 0px;
+
+    }
+
+    .mainimg{
+        width: 10%;
+        background-color: #5f6368;
+    }
+
+    .main{
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .data{
+        background-color: #ffffff;
+        width: 60%;
+        
+    }
+
+    .data .b1{
+
+        
+        height: 45px;
+        font-weight: 500px;
+        border-radius: 5px;
+        font-size: 16px;
+        border: none;
+        font-size: 17px;
+        width: 180px;
+        color: white;
+        background-color: #1a73e8;
+        font-family: "Google Sans","Roboto",Arial,sans-serif;
+            
+       
+
+    }
+
+    .data .b2{
+
+        color: #1a73e8;
+        background-color: white;
+        font-family: "Google Sans","Roboto",Arial,sans-serif;
+        height: 45px;
+        font-weight: 500px;
+        border-radius: 5px;
+        font-size: 16px;
+        border: none;
+        font-size: 17px;
+        margin-left: 25px;
+        width: 180px;
+
+        
+        
+
+    }
+
+    .cbtn{
+        padding-left: 25px;
+    }
+
+    .data .b2:hover{
+       
+       background-color: rgb(224, 224, 224);
+       
+       
+       
+   }
+
+
+   .data .b1:hover{
+
+       background-color: rgb(60, 60, 253);
+
+   }
+
+   .mainimg{
+    width: 50%;
+    margin-top: 100px;
+    background-color: white;
+   }
+
+   .mainimg>img{
+    width: 100%;
+   }
+
+
+
+
+        
+ 
+
+
+
+
+
+
+
+</style>
+<body>
+    
+    <div class="header">
+        <img src="img/logo-gmail.png" alt="gmail-logo">
+         <a href="">Gmail</a>
+        
+        <div class="buttons">
+        <button class="for-work">For work</button>
+        <button class="sign-in">Sign in</button>
+        <button class="get-gmail">Create an account</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="contant">
+            <div class="data">
+            <h1>Secure, smart, and easy to use email</h1>
+            <p>Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.</p>
+            
+            <div class="cbtn">
+                <button class="b1">Create an account</button>
+                <button class="b2">For work</button>
+            </div>
+            </div>
+        </div>
+
+
+    
+        <div class="mainimg">
+            <img src="https://lh3.googleusercontent.com/PWXM4hp9lRRezHTV86SqLwhRQMz4_Lk08jll3GkWBvBZy_Uk6kvUvwIrVilwaIW2mHZJoccchG6o9a5UdOJEwQPf9oJGmOGSglo3VW0=rw-e365-w2880" alt="">
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
