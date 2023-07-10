@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+
+    <style>
+
+
+        body{
+            display: grid;
+            justify-content: center;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        }
+        .logo>img{
+            width: 70px;
+            margin-left: 50px;
+            
+        }
+        .menu{
+            /* border: 2px solid black; */
+            /* align-items: center; */
+            justify-content: center;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+           
+
+        }
+        .menu>a{
+
+            text-decoration: none;
+            /* padding-left: 25p; */
+            padding-left: 20px;
+            text-decoration: none;
+            color: black;
+            
+
+        }
+
+        .menu>a:hover{
+            color: rgb(14, 225, 14);
+        }
+
+        
+
+        .btn>button{
+            margin-left: 50%;
+            width: 150px;
+            height: 40px;
+            color: #000;
+            background-color: rgb(14, 225, 14);
+            border: none;
+            border-radius: 10px;
+            margin-top: 0px;
+            
+        }
+
+
+
+
+
+        /* content section */
+
+         .container-2
+        {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* border: 2px solid black; */
+        padding: 5px;
+        gap: 20px;
+        align-items: center;
+        /* align-content: center; */
+        align-self: center;
+        
+
+        } 
+
+        .message{
+
+            /* background-color: aqua; */
+            margin-left: 40px;
+            font-size: large;
+            
+
+        }  
+        
+        
+
+        .message>p{
+            color: rgb(171, 167, 163);
+            margin-top: 50px;
+            line-height: 25px;
+        }
+
+        .img-section{
+            background-color: yellow;
+        }
+        img{
+           
+            
+            width: 80%;
+            
+        }
+
+        button{
+            margin-top: 20px;
+            padding: 10px;
+            width: 150px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border: none;
+
+        }
+
+
+
+
+
+        /* order section */
+
+        .order-process{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            background-color: #2b1e16;
+            max-width: 1200px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+
+        }
+
+        .order-process img{
+            width: 40%;
+            margin-bottom: 10px;
+        }
+
+        .order-process h2{
+
+            font-size: 25px;
+            color: white;
+            
+        }
+
+        .order-process p{
+            padding: 25px;
+            font-size: 18px;
+            line-height: 25px;
+            color: #8c6e54;
+        }
+
+        .Lightning-Fast-Delivery img{
+            margin-top: 50px;
+        }
+
+
+
+
+
+        /* facility content */
+
+
+        
+        .facility-container
+        {
+            max-width: 1200px;
+            margin: auto;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            /* border: 1px solid black; */
+            gap: 20px;
+          
+            
+            
+
+            
+        }
+
+        .order-online{
+
+            border: 1px solid black;
+            border-radius:20px
+            
+
+        }
+
+        .on-site-dining{
+
+            border: 1px solid black;
+            border-radius:20px
+
+        }
+
+        .nightlife-cubs{
+
+            border: 1px solid black;
+            border-radius:20px
+
+        }
+
+
+        .order-online>img{
+            width: 100%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            
+
+        }
+        .on-site-dining>img{
+            width: 100%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+
+        }
+        .nightlife-cubs>img{
+            width: 100%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+
+        }
+
+        .facility-container p{
+            padding-left: 25px;
+            color: #4c665d;
+        }
+
+        .facility-container h2{
+            padding-left: 25px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* footer section */
+
+        .myfoot{
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            background-color: #2b1e16;
+           
+
+
+        }
+
+
+        .footer-logo{
+            /* border: 1px solid black; */
+            align-self: center;
+            text-align: center;
+           
+
+
+
+        }
+
+        .footer-logo img{
+            border-radius: 100px;
+            width: 50%;
+
+        }
+
+        .links{
+
+            /* border: 1px solid black; */
+            line-height: 40px;
+            list-style: none;
+            color: #8c6e54;
+
+
+        }
+
+        .Learn-more{
+
+            /* border: 1px solid black; */
+            line-height: 40px;
+            list-style: none;
+            color: #8c6e54;
+
+
+        }
+
+
+
+        .copyright{
+            
+            grid-column: 1/4;
+            text-align: center;
+            /* border: 1px solid black; */
+            color: white;
+
+
+           
+
+        }
+
+        .links ul{
+            list-style: none;
+            
+        }
+        .Learn-more ul{
+
+            list-style: none;
+            
+        }
+
+
+
+        .links h2{
+            color: white;
+            padding-left: 20px;
+        }
+
+        .Learn-more h2{
+            color: white;
+            padding-left: 20px;
+
+        }
+
+
+
+
+
+
+      
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#process">About</a>
+            <a href="#contect">Contect</a>
+        </div>
+
+        <div class="btn">
+        <button>login</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+    <div class="container-2" id="#home">
+        <div class="message">
+            <h1>Healthy Food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus, incidunt temporibus corporis facilis vero tempore ullam ex saepe velit natus quae cupiditate? Fugiat dolores soluta, quis quo earum explicabo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quae harum error eum perferendis deleniti, asperiores fuga. Earum quidem reiciendis quibusdam eveniet soluta adipisci, doloremque voluptatum explicabo libero cupiditate!
+            </p>
+            <button>Read More</button>
+        </div>
+        <div class="img-section">
+            <img src="img/food-img.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <div class="order-process" id="process">
+        <div class="no-Minimum-order">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" alt="No minimum order img">
+            <h2>No Minimum Order</h2>
+            <p>Order in for yourself or for the group, with no restrictions on order value</p>
+        </div>
+
+        <div class="Live Order Tracking">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy" alt="Live Order Tracking">
+            <h2>Live Order Tracking</h2>
+            <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+        </div>
+
+        <div class="Lightning-Fast-Delivery">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn" alt="Lightning-Fast Delivery">
+            <h2>Lightning-Fast Delivery</h2>
+            <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="facility-container">
+        <div class="order-online">
+            <img src="img/order-online-1.jpg" alt="">
+            <h2>Order Online</h2>
+            <p>Stay home and order to your Doar Step</p>
+        </div>
+
+        <div class="on-site-dining">
+            <img src="img/dining-2.jpg" alt="">
+            <h2>On-Site Dining</h2>
+            <p>Stay home and order to your Doar Step</p>
+        </div>
+
+        <div class="nightlife-cubs">
+            <img src="img/club-3.jpg" alt="">
+            <h2>Nightlife & Clubs</h2>
+            <p>Explore the city's top nightlife outlets & clubs</p>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="myfoot" id="contect">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="links">
+
+            <h2>Nevigation Links</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </ul>
+        </div>
+
+
+        <div class="Learn-more">
+            <h2>Learn More</h2>
+            <ul>
+                <li>Privacy</li>
+                <li>Security</li>
+                <li>Terms</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+
+
+        <div class="copyright">
+        <p>&#169 Copyright All rights Reserved</p>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
