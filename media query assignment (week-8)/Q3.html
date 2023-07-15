@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card-website</title>
+    <script src="https://kit.fontawesome.com/fd053811ab.js" crossorigin="anonymous"></script>
+
+
+    <style>
+
+        body{
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;;
+        }
+        img{
+            width: 50px;
+        }
+        .nave-bar{
+            display: flex;
+            border: 1px solid black;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #242b2e;
+            position: sticky;
+            top: 0px;
+
+        }
+        .menu{
+            /* border: 1px solid black; */
+        }
+        .menu-conten>a{
+            text-decoration: none;
+           padding: 20px; 
+           color: white;
+           
+        }
+        .login-btn{
+
+            margin-right: 40px;
+            width: 100px;
+            padding: 5px;
+           background-color: #0072e1;
+           border: none;
+           border-radius: 5px;
+           color: white;
+
+        }
+
+        .login-btn-menu{
+
+            margin-right: 40px;
+            width: 50px;
+            padding: 5px;
+           /* background-color: #0072e1; */
+           border: none;
+           border-radius: 5px;
+           color: white;
+           display: none;
+
+
+
+        }
+
+        .login-btn:hover{
+           scale: 1.1;
+        }
+
+        .menu-conten>a:hover{
+            color: #0072e1;
+            scale: 1.1;
+        }
+
+
+
+        @media  screen and (max-width:800px) 
+    {
+
+
+        .menu-conten{
+           
+            display: none;
+            justify-content: space-around;
+
+
+           
+        }
+
+        .login-btn{
+            display: none;
+        }
+
+        .login-btn-menu{
+            display: block;
+        }
+        .nave-bar{
+            height:80px;
+            display: flex;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0px;
+          
+
+        }
+    }
+
+
+
+
+        /* midel content */
+
+        .midel-container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            
+
+
+        }
+        .part1{
+            width: 50%;
+            padding-left: 100px;
+            padding-top: 100px;
+            line-height: 25px;
+            /* text-align: center; */
+
+
+        }
+
+        .midel-container >h2{
+           
+            font-weight: 700px;
+            font-size: 2.3rem;
+            color: #000;
+
+
+        }
+        h1{
+           
+            font-size: 3.2rem;
+            color: #0072e1;            
+        }
+        .part1 span{
+            font-size: 1.5rem;
+            line-height: 25px;
+            color: #0072e1;
+            font-weight: bold;
+        }
+        .info-para{
+            margin-top: 40px;
+            line-height: 25px;
+            font-size: 1.2rem;
+            color: gray;
+            
+
+            
+        }
+
+        .apply-now{
+            margin-top: 40px;
+            padding: 20px;
+            width: 250px;
+            background-color: #0072e1;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-bottom: 40px;
+
+        }
+
+        .apply-now i{
+            padding-left: 10px;
+            width: 25px;
+            
+        }
+        .imgcontainer{
+            width: 100%;
+        }
+
+        .imgcontainer img{
+            width: 100%;
+            margin-top: 40px;
+        }
+        .part2{
+            width: 50%;
+            margin-right: 100px;
+        }
+
+
+
+        @media  screen and (max-width:800px) 
+        {
+
+            .midel-container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: start;
+                align-content: start;
+                padding-left: 0px;
+                margin-left: 10px;
+
+            }
+
+            .part1
+            {
+            padding-left: 20px;
+            width: 100%;
+            }
+
+
+            .apply-now i
+            {
+                display: none;
+                
+            }
+
+            .apply-now{
+                width: 150px;
+                font-size: 15px;
+            }
+
+            .part2
+            {
+            margin-top: 40px;
+            width: 100%;
+            /* height: 100%; */
+        
+            }
+
+         
+
+        
+
+            
+        }
+
+
+
+
+        /* last section */
+
+        .main-body-of-section{
+            display: flex;
+            background-color: black;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+
+        }
+        .last-section{
+           
+            color:#69a798;
+            font-size: 3rem;
+            font-weight: 800;
+
+            
+
+            
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid white; */
+            color: aliceblue;
+            margin-top: 25px;
+            font-size: 2rem;
+            font-weight: 500px;
+            line-height: 10px;
+            
+        }
+
+        @media screen and (max-width:800px) {
+
+
+            .main-body-of-section{
+                background-color: white;
+                
+
+
+            }
+            .content{
+                /* display: flex; */
+                font-size: 1rem;
+                /* flex-wrap: wrap; */
+                color: black;
+                margin-top: 0px;
+                width: 350px;
+                
+
+            }
+
+            .last-section{
+                font-size: 1.5rem;
+                width: 350px;
+
+            }
+
+            
+        }
+
+
+        
+        
+
+
+        
+    
+
+
+
+    
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <nav class="nave-bar">
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
+        <div class="menu-conten">
+            <a href="">Home</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <button class="login-btn">Login</button>
+        <img href="" src="img/icons8-menu-50.png"  class="login-btn-menu">
+        
+    </nav>
+
+
+
+
+    <!-- middel content -->
+
+
+    <div class="midel-container">
+        <div class="part1">
+            <h2>Say Hi to</h2>
+            <h1>OneCard</h1>
+            <span>Co-branded Card Issuers :</span>
+            <div class="imgcontainer">
+                <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="">
+            </div>
+            <p class="info-para">India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+            <button class="apply-now">Apply Now<i class='fab fa-google-play'></i><i class="fa fa-globe"></i><i class="fa fa-apple"></i></button>
+        </div>
+        <div class="part2">
+
+                <video  width="100%" height="100%" autoplay controls >
+                    <source src="img/say_hi_2x_d3_.mp4" type="video/mp4">
+                </video>
+
+            </video>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- last section -->
+
+    <div class="main-body-of-section">
+        <div class="last-section">
+            <h2>No Hidden Fees Ever.</h2>
+        </div>
+            <div class="content">
+                <h2>No Joining Fees.</h2>
+                <h2>No Annual Fees.</h2>
+                <h2>No Rewards Redemption Fees.</h2>
+            </div>
+    
+
+    </div>
+
+
+    
+</body>
+</html>
