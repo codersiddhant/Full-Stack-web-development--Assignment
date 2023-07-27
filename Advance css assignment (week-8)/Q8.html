@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+
+    <style>
+        img{
+            width: 20%;
+            margin-left: 200px;
+            margin-top: 300px;
+            animation: load 1s linear 0s infinite;
+            /* animation-duration: 0s; */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        @keyframes load {
+
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/loading.png" alt="">
+    </div>
+</body>
+</html>

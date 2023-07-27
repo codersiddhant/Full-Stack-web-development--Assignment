@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image zoomed</title>
+    <style>
+        .container{
+
+            display: grid;
+            grid-template-columns: 500px;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.9s ease-in;
+        }
+        img:hover{
+            transform: scale(1.5);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/dining-2.jpg" alt="">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gray scale property</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+
+        }
+        .container{
+
+            width: 500px;
+            text-align: center;
+
+            
+
+
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        img:hover{
+            transition: 1s;
+            filter: grayscale();
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><u>Hover To Have A GrayScale Look.</h1>
+            <img src="img/rose.jpg" alt="">
+
+    </div>
+    
+</body>
+</html>
