@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image privew</title>
+</head>
+<body>
+    <h1>Update profile peacture </h1>
+    <input type="file" id="selectfile" onchange="pri()" >
+    <h2>your profile picture is -</h2>
+    <img src="" alt="loading" id="picture">
+
+    
+    <script>
+        let pic=document.getElementById('picture')
+        let ff=document.getElementById('selectfile')
+        
+        
+        function pri()
+        {
+
+
+
+            
+
+            let reader=new FileReader();
+
+            reader.onload=function(e)
+            {
+                pic.src=e.target.result
+                
+            }
+
+            
+            reader.readAsDataURL(ff.files[0])
+
+            
+
+
+
+
+        } 
+
+        
+
+       
+       
+       
+
+
+    </script>
+</body>
+</html>
+
+

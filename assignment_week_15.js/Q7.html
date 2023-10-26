@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search bar</title>
+</head>
+<body>
+    <input type="text" placeholder="search" id="search">
+        <p id="txt"></p>
+        <ul id="content">
+            <li>html</li>
+            <li>css</li>
+            <li>tailwind css</li>
+            <li>git hub</li>
+            <li>javascript</li>
+        </ul>
+    <script>
+
+        let content=document.getElementById("content").getElementsByTagName("li")
+        let input=document.getElementById("search")
+
+
+        input.addEventListener("keyup",work)
+
+        function work()
+        {
+
+            input=input.value.toLowerCase()
+        for(let i=0;i<content.length;i++)
+        {
+            let itmTxt=content[i].innerText.toLowerCase();
+            if(itmTxt.includes(input))
+            {
+                content[i].style.display="block";
+            }
+            else{
+
+                content[i].style.display="none";
+
+
+            }
+
+        }
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

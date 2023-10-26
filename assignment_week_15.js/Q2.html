@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bg">
+        <h1 id="heading">Dark mode</h1>
+        <input type="button" value="toggle" id="click">
+    </div>
+
+
+    <script>
+        let button=document.getElementById("click")
+        let heading=document.getElementById("heading")
+        let mode=document.getElementById("bg")
+
+
+        button.addEventListener("click",modechange)
+
+        function modechange()
+        {
+            let check=mode.style.backgroundColor
+
+            if(check=="black")
+            {
+            mode.style.backgroundColor="white"
+            heading.style.color="black"
+            heading.textContent="light mode"
+            }
+            else
+            {
+            mode.style.backgroundColor="black"
+            heading.style.color="white"
+            heading.textContent="dark mode"
+            }
+
+
+        }
+
+
+    </script>
+
+
+
+
+    <style>
+        #heading{
+            font-size: bold;
+            color: antiquewhite;
+            margin-left: 20px;
+        }
+
+        #click{
+            padding: 10px;
+            margin-left: 20px;
+            
+        }
+
+
+
+        #bg{
+            width: 100%;
+            height: 200px;
+            border: 2px solid white;
+            background-color: black;
+
+        }
+
+    </style>
+</body>
+
+</html>

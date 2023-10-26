@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+    Name:   <input type="text"id="name" placeholder="minimum 3 char"><br><br>
+    Email:  <input type="email" id="email" placeholder="Enter your email"><br><br>
+    password:  <input type="password" id="pass" placeholder="minimum 8 char"><br><br>
+    <input type="submit" id="submit">
+
+
+    <script>
+        let name=document.getElementById("name")
+        let pass=document.getElementById("pass")
+        let submit=document.getElementById("submit")
+
+        submit.addEventListener("click",valid)
+        let val=name
+
+        function valid()
+        {
+            let val1=name.value.length
+            let val2=pass.value.length
+            if(val1>=3&&val2>=8)
+            {
+                alert("Form Validation successful")
+            }
+            else
+            {
+                    
+                alert("Form Validation failed")
+            }
+            
+        }
+
+
+        
+
+
+    </script>
+</body>
+</html>

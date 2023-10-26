@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        #con{
+            display: flex;
+            padding: 0px;
+            height: 200px;
+            width: 100px;
+            gap: 10px;
+
+            
+        }
+        #add{
+            height: 50px;
+            
+        }
+
+        #minus{
+            height: 50px;
+            
+            margin-top: 0px;
+            
+
+        }
+        #dis{
+            
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>counter</h1>
+    <div id="con">
+        <input type="button" value="+" id="add" >
+        <h1 id="dis">0</h1>
+        <input type="button" value="-" id="minus">
+
+    </div>
+
+
+    <script>
+        let add=document.getElementById("add");
+        let minus=document.getElementById("minus");
+        let dis=document.getElementById("dis");
+        let val=0
+        add.addEventListener("click",increment)
+        function increment()
+        {
+            val=val+1
+            dis.textContent=val
+
+        }
+
+        minus.addEventListener("click",decrement)
+        function decrement()
+        {
+            if(val==0)
+            {
+                alert("Counter is going beyond 0 cant decrement")
+            }
+            else{
+                val=val-1
+            dis.textContent=val
+
+            }
+
+
+
+        }
+
+    </script>
+</body>
+</html>

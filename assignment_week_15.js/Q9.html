@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login logout</title>
+  </head>
+  <body>
+    <button id="login">Login</button>
+    <button id="logout">Logout</button>
+
+    <h1 id="login-status"></h1>
+
+    <script>
+
+        login=document.getElementById("login")
+        logout=document.getElementById("logout")
+        heading=document.getElementById("login-status")
+
+        
+        login.addEventListener("click",logo)
+        logout.addEventListener("click",loout)
+
+
+        function logo()
+        {
+            heading.textContent = "User is logged In";
+
+        }
+
+        function loout()
+        {
+        heading.textContent = "User Has Not logged In";
+        }
+
+    </script>
+  </body>
+</html>
+

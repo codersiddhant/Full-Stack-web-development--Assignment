@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image toggle</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+            /* visibility: visible; */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Your Image is visible - </h1><br>
+    <button id="bt" value="true">Toggle Image</button><br><br>
+    <img src="ar.JPG" alt="" style="visibility: visible;" id="imgg">
+    
+    <script>
+         
+        button=document.getElementById("bt")
+        vis=document.getElementById("imgg")
+        text=document.getElementById("heading")
+
+        // submit.addEventListener("click",valid)
+        button.addEventListener("click",hide)
+        function hide()
+        {
+            
+            let val=button.value
+            if(val=="true")
+            {
+                // button.setAttribute("value","false")
+                vis.style.visibility="hidden"
+                button.value="false" 
+                text.textContent="Your Image is visible -"
+                   
+            }
+            else{
+                vis.style.visibility="visible"
+                button.value="true" 
+                text.textContent="Your Image is hidden -"
+
+
+
+            }
+                       
+
+        }
+            
+
+        
+
+
+
+    </script>
+
+</body>
+</html>
