@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usd to rupes using map function</title>
+</head>
+<body>
+    <script>
+        const usd_product_price=[
+            {
+                name:"mobile",
+                price:5
+            },
+            {
+                name:"camera",
+                price:15
+            },
+            {
+                name:"keybord",
+                price:50
+            }
+
+        ]
+
+        const indian_rs_product_price=usd_product_price.map((ele)=>{
+            return ele["price"]*80;
+        })
+
+        console.log(indian_rs_product_price)
+
+    </script>
+</body>
+</html>

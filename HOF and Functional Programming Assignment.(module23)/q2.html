@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quaction 2</title>
+</head>
+<body>
+    <script>
+
+        let countdown=0;
+        const counter=(countdown)=>{
+
+
+       
+            console.log(`${countdown} start`);
+        
+
+
+
+        
+        }
+
+        const randomnumber=()=>{
+
+            let no=Math.ceil(Math.random()*100)
+            console.log(no)
+
+
+            
+
+
+        }
+        
+        setInterval(()=>{
+
+            if(countdown<3)
+            {
+                countdown++
+                
+            }
+            else{
+                countdown=1
+                randomnumber()
+            }
+
+            counter(countdown)
+        },1000)
+
+    
+
+
+    </script>
+    
+</body>
+</html>

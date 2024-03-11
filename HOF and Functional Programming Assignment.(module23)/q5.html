@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+      let pattern=/[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/gi
+      
+      let data=prompt("enter url")
+
+      const result=data.match(pattern)
+  
+
+      if(result)
+      {
+        console.log("url is valid")
+      }
+      else{
+        console.log("url is not valid")
+      }
+    </script>
+</body>
+</html>

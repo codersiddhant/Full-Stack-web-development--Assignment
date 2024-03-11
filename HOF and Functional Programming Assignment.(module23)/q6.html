@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pattern = /^https:\/\/www\.linkedin\.com\/in\/[a-zA-Z0-9_-]{5,30}[a-zA-Z0-9]\/?.*$/i;
+        let data = prompt("Enter LinkedIn URL");
+        if (pattern.test(data)) {
+            console.log("URL is valid");
+        } else {
+            console.log("URL is not valid");
+        }
+
+    </script>
+</body>
+</html>

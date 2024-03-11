@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q1-reverse the string using settimeout</title>
+</head>
+<body>
+    <script>
+        console.log("welcome")
+let input=prompt("enter the string")
+let strarray=[]
+
+
+function reversestring(mystr){
+    let reversedstring
+    let result
+    for (let i of mystr){
+        strarray.push(i)
+
+    }
+    reversedstring=strarray.reverse()
+    result=strarray.join('')
+    console.log("input string - ",mystr)
+    console.log("reversed string - ",result)
+}
+
+
+setTimeout(()=>{
+    reversestring(input)
+},2000)
+
+
+    </script>
+</body>
+</html>

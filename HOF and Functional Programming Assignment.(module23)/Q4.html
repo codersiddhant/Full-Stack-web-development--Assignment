@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter book price</title>
+</head>
+<body>
+    <script>
+        const bookdata = [
+            {
+                name: "abc",
+                author: "aa",
+                year: 2005
+            },
+            {
+                name: "abcd",
+                author: "aaa",
+                year: 2015
+            },
+            {
+                name: "abcde",
+                author: "aa",
+                year: 2004
+            },
+            {
+                name: "abcdef",
+                author: "aa",
+                year: 2001
+            },
+        ];
+
+        const data2010before = bookdata.filter((ele) => ele.year < 2010);
+
+        const modifiedBooks = bookdata.map((ele) => {
+            return {
+                ...ele,
+                author: ele.author.toUpperCase(),
+            };
+        });
+
+        console.log(modifiedBooks);
+
+        for (let i of data2010before) {
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
