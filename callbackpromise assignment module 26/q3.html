@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ageindays</title>
+</head>
+<body>
+
+    <script>
+        // function ageindays(first_name,last_name,age,display)
+        // {
+        //     let fullname=`${first_name} ${last_name}`
+        //     let indays=age*365
+        //     display(fullname,indays)
+        // }
+
+        // function display(name,days)
+        // {
+        //     console.log(`the person full name id ${name} and there age in days ${days}`)
+        // }
+
+
+
+        // ageindays("siddhant","keste",21,display)
+
+
+
+        function ageindays(personinfo,display)
+        {
+            let fullname=`${personinfo["first_name"]} ${personinfo["last_name"]} `
+            let indays=personinfo["age"]*365
+            display(fullname,indays)
+        }
+
+        function display(name,days)
+        {
+            console.log(`the person full name id ${name} and there age in days ${days}`)
+        }
+
+        const personinfo={
+            first_name:"rohit",
+            last_name:"keste",
+            age:23
+        }
+
+        ageindays(personinfo,display)
+
+    </script>
+    
+</body>
+</html>

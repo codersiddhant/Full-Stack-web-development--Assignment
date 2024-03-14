@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise reslove</title>
+</head>
+<body>
+    <script>
+        let name="siddhant";
+            
+        
+        function createpromise(name){
+                return new Promise((reslove,reject)=>{
+                    reslove(name)
+                })
+            }
+            
+            
+            
+            createpromise(name).then((result) => {
+
+                console.log(`Hello ${result}`)
+                
+            })
+
+    </script>    
+</body>
+</html>

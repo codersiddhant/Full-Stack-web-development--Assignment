@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrang books in order</title>
+</head>
+<body>
+
+    <script>
+        let books = [
+    {
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        year: 1960
+    },
+    {
+        title: "jay 1984",
+        author: "George Orwell",
+        year: 1949
+    },
+    {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        year: 1925
+    },
+    {
+        title: "The Catcher in the Rye",
+        author: "J.D. Salinger",
+        year: 1951
+    },
+    {
+        title: "Harry Potter and the Philosopher's Stone",
+        author: "J.K. Rowling",
+        year: 1997
+    }
+];
+
+
+
+
+function separebooktitle(books,sortbooktitle){
+    let i=0;
+    let booktitle=[];
+    for (i of books){
+
+        booktitle.push(i["title"])
+
+
+    }
+
+    sortbooktitle(booktitle)
+}
+
+function sortbooktitle(booktitle)
+{
+    booktitle.sort()
+
+    console.log("sorted book title - ")
+    
+    for (i of booktitle){
+       console.log(i)
+    }
+
+
+}
+
+
+
+separebooktitle(books,sortbooktitle)
+
+
+
+
+</script>
+    
+</body>
+</html>

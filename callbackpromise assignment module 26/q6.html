@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>featch data</title>
+</head>
+<body>
+
+
+    <script>
+
+        console.log("program to featch the data from url - ")
+
+        async function featchingdata(){
+            let result;
+            await fetch(" https://jsonplaceholder.typicode.com/todos/1")
+            .then(async (data)=>{
+                result=await data.json();
+            })
+
+            console.log(result)
+
+            console.log("data fatch done")
+
+        }
+
+        featchingdata()
+
+    </script>
+    
+</body>
+</html>

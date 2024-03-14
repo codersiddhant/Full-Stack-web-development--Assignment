@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 api</title>
+</head>
+<body>
+
+    <script>
+
+let myobj={
+                todo:"",
+                toPost:""
+            }
+
+        async function fatchingdata(myobj){
+
+        let todoapi="https://jsonplaceholder.typicode.com/todos/1"
+        let topostapi="https://jsonplaceholder.typicode.com/posts/1"
+
+
+            await fetch(todoapi).then(async (data)=>{
+                let tododata=await data.json()
+                 myobj["todo"]=tododata
+            })
+
+
+            await fetch(topostapi).then(async (data)=>{
+                let topostdata=await data.json()
+                 myobj["toPost"]=topostdata
+            })
+
+
+            console.log(myobj)
+        }
+
+        fatchingdata(myobj)
+        console.log(myobj)
+
+    </script>
+    
+</body>
+</html>
